@@ -68,15 +68,15 @@ fitRoute.post("/login", async (req, res) => {
   }
 });
 
-// GET request to retrieve all fitness records
-// fitRoute.get("/", async (req, res) => {
-//   try {
-//     const data = await fitSchema.find();
-//     res.json(data);
-//   } catch (err) {
-//     res.status(500).json({ error: err.message });
-//   }
-// });
+GET request to retrieve all fitness records
+fitRoute.get("/", async (req, res) => {
+  try {
+    const data = await fitSchema.find();
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
 fitRoute.post("/", async (req, res) => {
   try {

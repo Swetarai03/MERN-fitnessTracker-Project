@@ -68,7 +68,7 @@ fitRoute.post("/login", async (req, res) => {
   }
 });
 
-GET request to retrieve all fitness records
+// GET request to retrieve all fitness records
 fitRoute.get("/", async (req, res) => {
   try {
     const data = await fitSchema.find();
